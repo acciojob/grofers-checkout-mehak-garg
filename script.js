@@ -11,7 +11,12 @@ const getSum = () => {
 			total_price+=parseInt(prices[i].innerText);
 		}
 	let last_row=document.createElement("tr");
-	last_row.innerHTML+=`<td>${total_price}</td>`;
+	let element1=document.createElement("td");
+	element1.innerText="Total price";
+	last_row.appendChild(element1);
+	let element2=document.createElement("td");
+	element2.innerText=`${total_price}`;
+	last_row.appendChild(element2);
 	document.querySelector("table").appendChild(last_row);
 };
 
