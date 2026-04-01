@@ -11,8 +11,8 @@ const getSum = () => {
 			total_price+=parseInt(prices[i].innerText);
 		}
 	let last_row=document.createElement("tr");
-	last_row.innerHtml+=`<td>${total_price}</td>`;
-	document.table.appendChild(last_row);
+	last_row.innerHTML+=`<td>${total_price}</td>`;
+	document.querySelector("table").appendChild(last_row);
 };
 
 getSumBtn.addEventListener("click", getSum);
