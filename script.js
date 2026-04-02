@@ -12,6 +12,7 @@ const getSum = () => {
 		}
 	let last_row=document.createElement("tr");
 	let element1=document.createElement("td");
+	tr.id="ans";
 	element1.innerText="Total price";
 	last_row.appendChild(element1);
 	let element2=document.createElement("td");
